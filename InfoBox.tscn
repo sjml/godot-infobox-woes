@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://InfoBox.gd" type="Script" id=1]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0, 0.372549, 0.784314, 0.662745 )
+
+[node name="InfoBox" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+anchor_right = 0.293
+anchor_bottom = 0.278
+margin_right = -0.0320129
+margin_bottom = 0.199982
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
+margin_right = 300.0
+margin_bottom = 167.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer"]
+margin_right = 300.0
+margin_bottom = 167.0
+text = "Adipisicing velit tempor sit dolore labore tempor do aliquip qui dolor enim duis. Amet ullamco commodo fugiat amet Lorem officia ut magna officia velit sunt irure nisi Lorem. Ullamco mollit sit officia esse culpa ullamco ea qui proident ad incididunt ipsum ipsum. Ullamco aliqua voluptate et et qui reprehenderit ut. Lorem deserunt qui veniam commodo velit deserunt eiusmod labore aliquip elit exercitation."
+autowrap = true
+
+[node name="Button" type="Button" parent="."]
+margin_left = 349.472
+margin_top = 29.3225
+margin_right = 494.472
+margin_bottom = 49.3225
+text = "Increase Text Length"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
