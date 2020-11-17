@@ -13,4 +13,4 @@ Here are my efforts to make an informational box useful for an in-game pop-over 
 
 Number 5 is where I run into problems. I cannot figure out the logic of what margins are allowed to be set and which are fixed. If I try to change the margins on the VBoxContainer, they snap back. At one point I had the margins set up properly but they went back to zero once the text changed. (I can't reproduce this at the moment.)
 
-![Setup](https://github.com/sjml/godot-infobox-woes/raw/master/screenshot.png) 
+![Setup](https://raw.githubusercontent.com/sjml/godot-infobox-woes/main/screenshot.png) 
