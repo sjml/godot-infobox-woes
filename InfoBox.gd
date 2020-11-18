@@ -1,6 +1,6 @@
 extends Control
 
-onready var label = $PanelContainer/VBoxContainer/Label
+onready var label = $PanelContainer/MarginContainer/Label
 
 var baseText = ""
 
